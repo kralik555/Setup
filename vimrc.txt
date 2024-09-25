@@ -18,6 +18,17 @@ set ttyfast                 " Speed up scrolling in Vim
 set encoding=utf-8
 set cursorline
 set cursorcolumn
+
+if exists('$TMUX')
+    " When using TMUX, use different escape sequences
+    let &t_SI = "\e[5 q"   " Insert mode - blinking vertical line
+    let &t_EI = "\e[2 q"   " Normal mode - blinking block
+else
+    " Cursor shape in terminal
+    let &t_SI = "\e[6 q"   " Insert mode - vertical bar
+    let &t_EI = "\e[2 q"   " Normal mode - block
+endif
+
 call plug#begin()
     Plug 'plasticboy/vim-markdown'
     Plug 'preservim/nerdtree'
