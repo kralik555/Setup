@@ -17,6 +17,8 @@ if [ ! -f "$VIMRC_SOURCE" ]; then
     exit 1
 fi
 
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+
 # Step 1: Copy the vimrc.txt content to ~/.vimrc
 echo "Copying vimrc.txt to ~/.vimrc..."
 cp "$VIMRC_SOURCE" "$VIMRC_DEST"
