@@ -47,3 +47,7 @@ echo "Sourcing .vimrc..."
 vim -c "source ~/.vimrc" -c "qa"
 
 echo "Vim setup completed!"
+
+# Step 6: Add fuzzy finder
+git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+~/.fzf/install
