@@ -34,7 +34,6 @@ call plug#begin()
     Plug 'preservim/nerdtree'
     Plug 'sheerun/vim-polyglot'
     Plug 'jiangmiao/auto-pairs'
-    Plug 'Exafunction/codeium.vim'
 call plug#end()
 
 colorscheme molokai

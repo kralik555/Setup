@@ -51,3 +51,6 @@ echo "Vim setup completed!"
 # Step 6: Add fuzzy finder
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 ~/.fzf/install
+
+# Step 7: add creating a virtual environment in Python and using it every time the shell loads
+
